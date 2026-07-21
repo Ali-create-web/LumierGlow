@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LumierGlow Skincare | Radiant Skin, Trusted Picks</title>
+<meta name="description" content="LumierGlow curates the best skincare products for radiant, healthy skin. Honest picks, trusted reviews." />
+
+<!-- Google Fonts: Poppins -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- Tailwind CSS (CDN) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+fontFamily: { sans: ["Poppins", "sans-serif"] },
+colors: { brand: { 50: "#fff1f5", 100: "#ffe4ec", 500: "#ec4899", 600: "#db2777", 700: "#be185d" } },
+},
+},
+};
+</script>
+
+<style>
+html { scroll-behavior: smooth; }
+body { font-family: "Poppins", sans-serif; }
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] .faq-icon { transform: rotate(180deg); }
+</style>
+</head>
+
+<body class="bg-white text-gray-700 antialiased">
+
+<!-- ===================== HEADER ===================== -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-brand-100">
+<div class="max-w-6xl mx-auto px-5 sm:px-6 flex items-center justify-between h-16">
+<a href="#home" class="flex items-center gap-2">
+<span class="text-2xl" aria-hidden="true">🌸</span>
+<span class="font-bold text-xl text-brand-700 tracking-tight">LumierGlow</span>
+</a>
+
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a href="#home" class="hover:text-brand-600 transition">Home</a>
+<a href="#products" class="hover:text-brand-600 transition">Products</a>
+<a href="#contact" class="hover:text-brand-600 transition">Contact</a>
+</nav>
+
+<a href="#products" class="hidden md:inline-block bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition">
+Shop Now
+</a>
+
+<button id="menuBtn" aria-label="Open menu" aria-expanded="false" class="md:hidden p-2 text-brand-700">
+<svg id="iconOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+</svg>
+<svg id="iconClose" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+</svg>
+</button>
+</div>
+
+<!-- Mobile menu -->
+<div id="mobileMenu" class="hidden md:hidden border-t border-brand-100 bg-white px-5 py-4 space-y-3 text-sm font-medium">
+<a href="#home" class="block hover:text-brand-600">Home</a>
+<a href="#products" class="block hover:text-brand-600">Products</a>
+<a href="#contact" class="block hover:text-brand-600">Contact</a>
+</div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section id="home" class="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+<div class="max-w-6xl mx-auto px-5 sm:px-6 py-16 sm:py-24 grid md:grid-cols-2 gap-10 items-center">
+<div class="text-center md:text-left">
+<span class="inline-block bg-brand-100 text-brand-700 text-xs font-semibold px-4 py-1.5 rounded-full mb-5">
+Trusted Skincare Picks
+</span>
+<h1 class="font-extrabold text-4xl sm:text-5xl leading-tight text-gray-900 mb-5">
+Discover Your <span class="text-brand-600">Natural Glow</span>
+</h1>
+<p class="text-gray-600 text-base sm:text-lg mb-8 max-w-md mx-auto md:mx-0">
+Handpicked skincare favorites, honestly reviewed — so you can shop with confidence and let your skin do the talking.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<a href="#products" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-7 py-3.5 rounded-full transition text-center">
+Shop Top Picks
+</a>
+<a href="#reviews" class="border border-brand-300 text-brand-700 font-semibold px-7 py-3.5 rounded-full hover:bg-brand-50 transition text-center">
+Read Reviews
+</a>
+</div>
+</div>
+
+<div class="relative flex justify-center">
+<div class="absolute w-64 h-64 sm:w-80 sm:h-80 bg-brand-100 rounded-full blur-2xl"></div>
+<svg viewBox="0 0 240 240" class="w-56 sm:w-72 relative z-10 drop-shadow-xl">
+<circle cx="120" cy="120" r="110" fill="#ffe4ec" />
+<rect x="85" y="80" width="70" height="105" rx="18" fill="#ffffff" stroke="#f9a8d4" stroke-width="2" />
+<rect x="95" y="60" width="50" height="26" rx="10" fill="#fbcfe8" />
+<rect x="98" y="115" width="44" height="16" rx="4" fill="#ec4899" opacity="0.85" />
+<text x="120" y="127" text-anchor="middle" fill="#fff" font-size="9" font-family="Poppins" font-weight="600">GLOW</text>
+</svg>
+</div>
+</div>
+</section>
+
+<!-- ===================== TOP 5 PRODUCTS ===================== -->
+<section id="products" class="max-w-6xl mx-auto px-5 sm:px-6 py-16 sm:py-20">
+<div class="text-center mb-12">
+<p class="text-brand-600 font-semibold text-sm uppercase tracking-wider mb-2">Editor's Choice</p>
+<h2 class="font-bold text-3xl sm:text-4xl text-gray-900">Top 5 Skincare Products</h2>
+<p class="text-gray-500 mt-3 max-w-xl mx-auto">Our most-loved, most-recommended picks — tested for real results.</p>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+
+<!-- Product Card Template x5 -->
+<div class="bg-white border border-brand-100 rounded-2xl p-5 flex flex-col hover:shadow-lg hover:-translate-y-1 transition">
+<div class="bg-brand-50 rounded-xl h-36 mb-4 flex items-center justify-center">
+<svg viewBox="0 0 100 100" class="w-16 h-16"><circle cx="50" cy="50" r="45" fill="#fbcfe8"/><rect x="35" y="30" width="30" height="45" rx="8" fill="#fff"/><rect x="40" y="22" width="20" height="12" rx="5" fill="#f472b6"/></svg>
+</div>
+<h3 class="font-semibold text-gray-900 mb-1">Glow Vitamin C Serum</h3>
+<p class="text-sm text-gray-500 mb-4 flex-1">Brightens dullness and evens tone for a radiant, lit-from-within glow.</p>
+<a href="#" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold text-center rounded-full py-2.5 transition">
+Buy Now
+</a>
+<!-- yahan baad me apna Amazon/Daraz affiliate link lagao -->
+</div>
+
+<div class="bg-white border border-brand-100 rounded-2xl p-5 flex flex-col hover:shadow-lg hover:-translate-y-1 transition">
+<div class="bg-brand-50 rounded-xl h-36 mb-4 flex items-center justify-center">
+<svg viewBox="0 0 100 100" class="w-16 h-16"><circle cx="50" cy="50" r="45" fill="#fde2ea"/><rect x="32" y="35" width="36" height="42" rx="10" fill="#fff"/><rect x="38" y="26" width="24" height="14" rx="6" fill="#ec4899"/></svg>
+</div>
+<h3 class="font-semibold text-gray-900 mb-1">Hydra Boost Moisturizer</h3>
+<p class="text-sm text-gray-500 mb-4 flex-1">Lightweight, oil-free hydration that keeps skin soft all day long.</p>
+<a href="#" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold text-center rounded-full py-2.5 transition">
+Buy Now
+</a>
+<!-- yahan baad me apna Amazon/Daraz affiliate link lagao -->
+</div>
+
+<div class="bg-white border border-brand-100 rounded-2xl p-5 flex flex-col hover:shadow-lg hover:-translate-y-1 transition">
+<div class="bg-brand-50 rounded-xl h-36 mb-4 flex items-center justify-center">
+<svg viewBox="0 0 100 100" class="w-16 h-16"><circle cx="50" cy="50" r="45" fill="#fbcfe8"/><rect x="34" y="32" width="32" height="46" rx="16" fill="#fff"/><rect x="42" y="24" width="16" height="12" rx="6" fill="#f472b6"/></svg>
+</div>
+<h3 class="font-semibold text-gray-900 mb-1">Gentle Foaming Cleanser</h3>
+<p class="text-sm text-gray-500 mb-4 flex-1">A soft daily cleanse that removes impurities without stripping skin.</p>
+<a href="#" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold text-center rounded-full py-2.5 transition">
+Buy Now
+</a>
+<!-- yahan baad me apna Amazon/Daraz affiliate link lagao -->
+</div>
+
+<div class="bg-white border border-brand-100 rounded-2xl p-5 flex flex-col hover:shadow-lg hover:-translate-y-1 transition">
+<div class="bg-brand-50 rounded-xl h-36 mb-4 flex items-center justify-center">
+<svg viewBox="0 0 100 100" class="w-16 h-16"><circle cx="50" cy="50" r="45" fill="#fde2ea"/><rect x="36" y="34" width="28" height="44" rx="8" fill="#fff"/><rect x="40" y="26" width="20" height="12" rx="5" fill="#ec4899"/></svg>
+</div>
+<h3 class="font-semibold text-gray-900 mb-1">Rose Petal Toner</h3>
+<p class="text-sm text-gray-500 mb-4 flex-1">Balances and refreshes skin with a calming, alcohol-free rose formula.</p>
+<a href="#" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold text-center rounded-full py-2.5 transition">
+Buy Now
+</a>
+<!-- yahan baad me apna Amazon/Daraz affiliate link lagao -->
+</div>
+
+<div class="bg-white border border-brand-100 rounded-2xl p-5 flex flex-col hover:shadow-lg hover:-translate-y-1 transition">
+<div class="bg-brand-50 rounded-xl h-36 mb-4 flex items-center justify-center">
+<svg viewBox="0 0 100 100" class="w-16 h-16"><circle cx="50" cy="50" r="45" fill="#fbcfe8"/><rect x="33" y="33" width="34" height="44" rx="10" fill="#fff"/><rect x="40" y="24" width="20" height="13" rx="6" fill="#f472b6"/></svg>
+</div>
+<h3 class="font-semibold text-gray-900 mb-1">Daily Defense SPF 50</h3>
+<p class="text-sm text-gray-500 mb-4 flex-1">Broad-spectrum sun protection with a weightless, no-white-cast finish.</p>
+<a href="#" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold text-center rounded-full py-2.5 transition">
+Buy Now
+</a>
+<!-- yahan baad me apna Amazon/Daraz affiliate link lagao -->
+</div>
+
+</div>
+</section>
+
+<!-- ===================== WHY US ===================== -->
+<section class="bg-brand-50 py-16 sm:py-20 px-5 sm:px-6">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-bold text-3xl sm:text-4xl text-gray-900">Why Shop With LumierGlow</h2>
+<p class="text-gray-500 mt-3">Honest picks. Real reviews. No guesswork.</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+<div class="flex flex-col items-center">
+<div class="bg-white rounded-full p-4 mb-4 shadow-sm"><span class="text-2xl">🧪</span></div>
+<h3 class="font-semibold text-gray-900 mb-1">Dermatologist Reviewed</h3>
+<p class="text-sm text-gray-500">Every pick is checked against real dermatological standards.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-white rounded-full p-4 mb-4 shadow-sm"><span class="text-2xl">✅</span></div>
+<h3 class="font-semibold text-gray-900 mb-1">100% Authentic</h3>
+<p class="text-sm text-gray-500">We link only to trusted, genuine sellers — never counterfeits.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-white rounded-full p-4 mb-4 shadow-sm"><span class="text-2xl">⭐</span></div>
+<h3 class="font-semibold text-gray-900 mb-1">Trusted Reviews</h3>
+<p class="text-sm text-gray-500">Honest ratings from real users, not paid promotions.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="bg-white rounded-full p-4 mb-4 shadow-sm"><span class="text-2xl">⚡</span></div>
+<h3 class="font-semibold text-gray-900 mb-1">Fast & Easy</h3>
+<p class="text-sm text-gray-500">One click takes you straight to the best deal available.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section id="reviews" class="max-w-6xl mx-auto px-5 sm:px-6 py-16 sm:py-20">
+<div class="text-center mb-12">
+<h2 class="font-bold text-3xl sm:text-4xl text-gray-900">What Our Readers Say</h2>
+<p class="text-gray-500 mt-3">Real feedback from people who tried our top picks.</p>
+</div>
+<div class="grid sm:grid-cols-3 gap-6">
+<div class="bg-white border border-brand-100 rounded-2xl p-6">
+<div class="text-brand-500 mb-3" aria-label="5 out of 5 stars">★★★★★</div>
+<p class="text-gray-600 text-sm mb-4">"The Vitamin C serum genuinely brightened my skin in two weeks. So glad I trusted this list!"</p>
+<p class="font-semibold text-gray-900 text-sm">— Ayesha K.</p>
+</div>
+<div class="bg-white border border-brand-100 rounded-2xl p-6">
+<div class="text-brand-500 mb-3" aria-label="5 out of 5 stars">★★★★★</div>
+<p class="text-gray-600 text-sm mb-4">"Loved how simple the site made it to compare and buy. No fluff, just honest picks."</p>
+<p class="font-semibold text-gray-900 text-sm">— Sana M.</p>
+</div>
+<div class="bg-white border border-brand-100 rounded-2xl p-6">
+<div class="text-brand-500 mb-3" aria-label="4 out of 5 stars">★★★★☆</div>
+<p class="text-gray-600 text-sm mb-4">"The moisturizer recommendation was perfect for my dry skin. Will be back for more picks."</p>
+<p class="font-semibold text-gray-900 text-sm">— Hira R.</p>
+</div>
+</div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="bg-brand-50 py-16 sm:py-20 px-5 sm:px-6">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-10">
+<h2 class="font-bold text-3xl sm:text-4xl text-gray-900">Frequently Asked Questions</h2>
+</div>
+<div class="space-y-4">
+
+<details class="bg-white rounded-xl p-5 border border-brand-100">
+<summary class="flex items-center justify-between cursor-pointer font-semibold text-gray-900">
+Do you sell products directly?
+<svg class="faq-icon w-5 h-5 text-brand-600 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<p class="text-sm text-gray-500 mt-3">No — LumierGlow is a curated recommendation site. Clicking "Buy Now" takes you to trusted retailers where you complete your purchase.</p>
+</details>
+
+<details class="bg-white rounded-xl p-5 border border-brand-100">
+<summary class="flex items-center justify-between cursor-pointer font-semibold text-gray-900">
+Are the products genuine?
+<svg class="faq-icon w-5 h-5 text-brand-600 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<p class="text-sm text-gray-500 mt-3">Yes, we only link to reputable, authorized sellers so you can shop with confidence.</p>
+</details>
+
+<details class="bg-white rounded-xl p-5 border border-brand-100">
+<summary class="flex items-center justify-between cursor-pointer font-semibold text-gray-900">
+How do affiliate links work?
+<svg class="faq-icon w-5 h-5 text-brand-600 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<p class="text-sm text-gray-500 mt-3">We may earn a small commission when you purchase through our links, at no extra cost to you. This helps keep LumierGlow running.</p>
+</details>
+
+<details class="bg-white rounded-xl p-5 border border-brand-100">
+<summary class="flex items-center justify-between cursor-pointer font-semibold text-gray-900">
+Do prices update on this site?
+<svg class="faq-icon w-5 h-5 text-brand-600 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+</summary>
+<p class="text-sm text-gray-500 mt-3">Final pricing is always shown on the retailer's page, since prices there can change — always check before checkout.</p>
+</details>
+
+</div>
+</div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer id="contact" class="bg-gray-900 text-gray-300 py-12 px-5 sm:px-6">
+<div class="max-w-6xl mx-auto grid sm:grid-cols-3 gap-8 mb-8">
+<div>
+<p class="font-bold text-xl text-white mb-2">🌸 LumierGlow</p>
+<p class="text-sm text-gray-400">Curated skincare picks for radiant, healthy skin.</p>
+</div>
+<div>
+<p class="text-sm font-semibold text-white mb-3">Quick Links</p>
+<ul class="text-sm space-y-2">
+<li><a href="#home" class="hover:text-brand-400">Home</a></li>
+<li><a href="#products" class="hover:text-brand-400">Products</a></li>
+<li><a href="#reviews" class="hover:text-brand-400">Reviews</a></li>
+</ul>
+</div>
+<div>
+<p class="text-sm font-semibold text-white mb-3">Contact</p>
+<p class="text-sm text-gray-400">hello@lumierglow.com</p>
+</div>
+</div>
+<div class="max-w-6xl mx-auto border-t border-gray-700 pt-6 text-center text-sm text-gray-400 space-y-1">
+<p>Affiliate Disclosure: LumierGlow may earn a commission from qualifying purchases made through links on this site, at no extra cost to you.</p>
+<p>&copy; 2026 LumierGlow. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+const iconOpen = document.getElementById("iconOpen");
+const iconClose = document.getElementById("iconClose");
+
+menuBtn.addEventListener("click", () => {
+const isOpen = !mobileMenu.classList.contains("hidden");
+mobileMenu.classList.toggle("hidden");
+iconOpen.classList.toggle("hidden");
+iconClose.classList.toggle("hidden");
+menuBtn.setAttribute("aria-expanded", String(!isOpen));
+});
+
+mobileMenu.querySelectorAll("a").forEach((link) =>
+link.addEventListener("click", () => {
+mobileMenu.classList.add("hidden");
+iconOpen.classList.remove("hidden");
+iconClose.classList.add("hidden");
+})
+);
+</script>
+
+</body>
+</html>
